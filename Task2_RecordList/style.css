@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation&family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Serif+Pro:wght@700&display=swap');
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+    height: 100vh;
+    display: block;
+    background-image: url(hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+ .container{
+  background-color:  rgba(0, 0, 0, 0.4);
+  width: 30%;
+  min-height: 90%;
+  align-items: center;
+  text-align: center;
+  margin: 2% auto 0 auto;
+ border-radius: 8px;
+ color: white;
+}
+
+input{
+  width: 80%;
+  padding: 4px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 500;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+}
+button{
+  width: auto;
+  padding:5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.line{
+  color: white;
+  
+}
+h3{
+  font-size: 26px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button:hover {
+  color: #333;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 6px 0;
+  /* border-bottom: 1px solid #eee; */
+  display: flex;
+  margin-left: 1px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li > .delete:hover {
+  color: #CF2323;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: white;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+ul li input[type=checkbox]{
+  width: 20px;
+}
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
